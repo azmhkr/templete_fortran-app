@@ -2,7 +2,7 @@
 
 ## About
 This repository is a template repository for developing applications in Fortran.
-To use the templete click "Use this template" on top page of this repository.
+To use it click "Use this template" on top page of this repository.
 
 This template provides
 - a simple "hello, world" application using openmp and mpi libraries.
@@ -16,7 +16,7 @@ This template requires
 - cmake version 3.21 or newer
 - fypp preprocesser
 
-You can install them by package manager (brew, conda, etc.)
+You can install them by package manager (brew, conda, etc.).
 
 The tested enviroments are
 - gfortran 12.2.0 (arm64)
