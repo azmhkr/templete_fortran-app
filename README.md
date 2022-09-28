@@ -34,12 +34,20 @@ If you want to say goodbye, run
 cmake -B build -DI_WANT_TO_GOODBYE=1
 ```
 
-To build the hello world application run
+To build the hello world application, run
 ```
 cmake --build build
 ```
-To install the application to ```location``` run
+
+Now, you can use application by
+```
+./build/src/hello_world
+mpirun -n 4 ./build/src/hello_world
+```
+
+To install the application to ```location```, run
 ```
 cmake --install build --prefix location
 ```
-The hello world application is useless, so I strongly recommend that you make sure that ```location``` can be deleted immediately.
+
+This hello world application is useless, so I strongly recommend that you make sure that ```location``` can be deleted immediately.
