@@ -45,7 +45,7 @@ Now, you can use application by
 mpirun -n 4 ./build/src/hello_world
 ```
 
-To install the application to ```location```, run
+To install this application to ```location```, run
 ```
 cmake --install build --prefix location
 ```
