@@ -12,7 +12,8 @@ This template provides
 ## Getting started
 ### Requirements
 This template requires
-- a Fortran compiler
+- a fortran compiler
+- mpi library
 - cmake version 3.21 or newer
 - fypp preprocesser
 
@@ -20,6 +21,7 @@ You can install them by package manager (brew, conda, etc.).
 
 The tested enviroments are
 - gfortran 12.2.0 (arm64)
+- open-mpi 4.1.4
 - cmake 3.24.2
 - fypp 3.1
 
