@@ -2,7 +2,7 @@
 
 ## About
 This repository is a template repository for developing applications in Fortran.
-To use the templete click "Use this template" on top page of this reposiroty.
+To use the templete click "Use this template" on top page of this repository.
 
 This template provides
 - a simple "hello, world" application using openmp and mpi libraries.
