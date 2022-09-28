@@ -1,0 +1,26 @@
+#:include "macros.fypp"
+module sample
+    !|
+    ! This module provides simple hello world subroutine.
+    !
+    use, intrinsic :: iso_fortran_env
+    use :: omp_lib
+    implicit none
+    contains
+    !> Greetings in a gentlemanly manner.
+    subroutine greet(mpi_rank)
+        !> mpi rank
+        integer(int32), intent(in) :: mpi_rank
+
+        @:ASSERT("hoge" == "hoge")
+        @:CHECK("piyo" == "piyo")
+
+        !$omp parallel
+        #:if I_WANT_TO_GOODBYE == 1
+        print '(*(g0))', "Good bye, sayonara."
+        #:else
+        print '(*(g0))', "Hello, world. My name is Thread", omp_get_thread_num(), " Rank", mpi_rank
+        #:endif
+        !$omp end parallel
+    end subroutine
+end module
